@@ -1,18 +1,18 @@
 ### TaskFlow Kanban Project
 
-    TaskFlow est une application web de gestion de projet de type Kanban, inspirée de Jira. Elle est construite en JavaScript vanilla, utilise Tailwind CSS pour le style, et s'appuie entièrement sur Firebase pour le backend (Authentification, base de données Firestore et Stockage).
+TaskFlow est une application web de gestion de projet de type Kanban, inspirée de Jira. Elle est construite en JavaScript vanilla, utilise Tailwind CSS pour le style, et s'appuie entièrement sur Firebase pour le backend (Authentification, base de données Firestore et Stockage).
 
-    Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (protégés par des codes d'accès) et de suivre les tâches à travers les colonnes "To Do", "In Progress", et "Done" avec des mises à jour en temps réel.
+Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (protégés par des codes d'accès) et de suivre les tâches à travers les colonnes "To Do", "In Progress", et "Done" avec des mises à jour en temps réel.
 
 ## Fonctionnalités Clés
 
 # Authentification et Gestion de Profil
 
-Authentification complète : Inscription et connexion par e-mail et mot de passe via Firebase Authentication.
+* Authentification complète : Inscription et connexion par e-mail et mot de passe via Firebase Authentication.
 
-Réinitialisation du mot de passe : Fonctionnalité d'envoi d'e-mail pour réinitialiser le mot de passe.
+* Réinitialisation du mot de passe : Fonctionnalité d'envoi d'e-mail pour réinitialiser le mot de passe.
 
-Gestion de profil : Les utilisateurs peuvent mettre à jour leur nom d'utilisateur et télécharger une photo de profil personnalisée (gérée par Firebase Storage).
+* Gestion de profil : Les utilisateurs peuvent mettre à jour leur nom d'utilisateur et télécharger une photo de profil personnalisée (gérée par Firebase Storage).
 
 # Gestion de Projet
 
