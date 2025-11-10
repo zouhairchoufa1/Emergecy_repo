@@ -70,23 +70,22 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 Ce projet est une application web statique qui se connecte directement à Firebase. Il n'y a pas de code côté serveur à exécuter, mais il doit être servi via un serveur local.
 
-Note importante : L'ouverture du fichier index.html directement dans le navigateur (ex: file:///...) échouera probablement en raison des politiques de sécurité (CORS) des navigateurs, en particulier pour les opérations de Firebase Storage (comme l'upload de photos).
+#### Note importante : L'ouverture du fichier index.html directement dans le navigateur (ex: file:///...) échouera probablement en raison des politiques de sécurité (CORS) des navigateurs, en particulier pour les opérations de Firebase Storage (comme l'upload de photos).
 
-Prérequis
+* Prérequis
 
-Node.js (requis pour utiliser npx serve)
+1- Node.js (requis pour utiliser npx serve)
 
-Un compte Firebase pour configurer le backend.
+2- Un compte Firebase pour configurer le backend.
 
-Étapes d'installation et de configuration
+## Étapes d'installation et de configuration
 
-Cloner le dépôt :
+* Cloner le dépôt :
 
-    git clone [URL_DU_REPO]
-    cd TaskFlow-Kanban
+      git clone [URL_DU_REPO]
+      cd TaskFlow-Kanban
 
-
-## Configurer Firebase :
+* Configurer Firebase :
 
 1- Créez un nouveau projet sur la console Firebase.
 
@@ -98,13 +97,13 @@ Cloner le dépôt :
 
 Dans les paramètres de votre projet, trouvez votre objet de configuration firebaseConfig.
 
-Ajouter la configuration Firebase :
+* Ajouter la configuration Firebase :
 
 1- Ouvrez le fichier src/js/main.js (ou src/js/config.js s'il est dédié à cela).
 
 2- Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder) et collez-y votre propre configuration :
 
-##  Remplacez par votre propre configuration
+* Remplacez par votre propre configuration
 
         const firebaseConfig = {
         apiKey: "VOTRE_API_KEY",
@@ -115,7 +114,7 @@ Ajouter la configuration Firebase :
         appId: "VOTRE_APP_ID"
         };
 
-##  Initialiser Firebase (la méthode d'initialisation peut varier)
+* Initialiser Firebase (la méthode d'initialisation peut varier)
 # 
     firebase.initializeApp(firebaseConfig);
 #
