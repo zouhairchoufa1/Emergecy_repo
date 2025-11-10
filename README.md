@@ -1,8 +1,8 @@
-TaskFlow Kanban Project
+### TaskFlow Kanban Project
 
-TaskFlow est une application web de gestion de projet de type Kanban, inspirée de Jira. Elle est construite en JavaScript vanilla, utilise Tailwind CSS pour le style, et s'appuie entièrement sur Firebase pour le backend (Authentification, base de données Firestore et Stockage).
+    TaskFlow est une application web de gestion de projet de type Kanban, inspirée de Jira. Elle est construite en JavaScript vanilla, utilise Tailwind CSS pour le style, et s'appuie entièrement sur Firebase pour le backend (Authentification, base de données Firestore et Stockage).
 
-Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (protégés par des codes d'accès) et de suivre les tâches à travers les colonnes "To Do", "In Progress", et "Done" avec des mises à jour en temps réel.
+    Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (protégés par des codes d'accès) et de suivre les tâches à travers les colonnes "To Do", "In Progress", et "Done" avec des mises à jour en temps réel.
 
 ## Fonctionnalités Clés
 
@@ -104,19 +104,21 @@ Ouvrez le fichier src/js/main.js (ou src/js/config.js s'il est dédié à cela).
 
 Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder) et collez-y votre propre configuration :
 
-# // Remplacez par votre propre configuration
-const firebaseConfig = {
-  apiKey: "VOTRE_API_KEY",
-  authDomain: "VOTRE_AUTH_DOMAIN",
-  projectId: "VOTRE_PROJECT_ID",
-  storageBucket: "VOTRE_STORAGE_BUCKET",
-  messagingSenderId: "VOTRE_MESSAGING_SENDER_ID",
-  appId: "VOTRE_APP_ID"
-};
+#  Remplacez par votre propre configuration
 
-# // Initialiser Firebase (la méthode d'initialisation peut varier)
-# // firebase.initializeApp(firebaseConfig);
+        const firebaseConfig = {
+        apiKey: "VOTRE_API_KEY",
+        authDomain: "VOTRE_AUTH_DOMAIN",
+        projectId: "VOTRE_PROJECT_ID",
+        storageBucket: "VOTRE_STORAGE_BUCKET",
+        messagingSenderId: "VOTRE_MESSAGING_SENDER_ID",
+        appId: "VOTRE_APP_ID"
+        };
 
+#  Initialiser Firebase (la méthode d'initialisation peut varier)
+# 
+--> firebase.initializeApp(firebaseConfig);
+#
 
 Exécuter le projet
 
