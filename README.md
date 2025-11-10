@@ -1,12 +1,12 @@
-### TaskFlow Kanban Project
+# TaskFlow Kanban Project
 
 TaskFlow est une application web de gestion de projet de type Kanban, inspirée de Jira. Elle est construite en JavaScript vanilla, utilise Tailwind CSS pour le style, et s'appuie entièrement sur Firebase pour le backend (Authentification, base de données Firestore et Stockage).
 
 Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (protégés par des codes d'accès) et de suivre les tâches à travers les colonnes "To Do", "In Progress", et "Done" avec des mises à jour en temps réel.
 
-## Fonctionnalités Clés
+# Fonctionnalités Clés
 
-# Authentification et Gestion de Profil
+## Authentification et Gestion de Profil
 
 * Authentification complète : Inscription et connexion par e-mail et mot de passe via Firebase Authentication.
 
@@ -14,7 +14,7 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 * Gestion de profil : Les utilisateurs peuvent mettre à jour leur nom d'utilisateur et télécharger une photo de profil personnalisée (gérée par Firebase Storage).
 
-# Gestion de Projet
+## Gestion de Projet
 
 * Tableau de bord : Visualisez tous les projets auxquels vous avez accès sur un tableau de bord d'accueil.
 
@@ -22,7 +22,7 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 * Accès aux projets : Rejoignez un projet existant en utilisant son code d'accès.
 
-# Tableau Kanban et Tâches
+## Tableau Kanban et Tâches
 
 * Tableau par projet : Chaque projet possède son propre tableau Kanban (To Do, In Progress, Done).
 
@@ -34,13 +34,13 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 * Glisser-déposer (Drag-and-Drop) : Déplacez facilement les tâches entre les colonnes pour changer leur statut.
 
-# Filtrage et Tri
+## Filtrage et Tri
 
 * Filtrage : Filtrez les tâches par nom ou par créateur.
 
 * Tri : Triez les tâches par date de création (plus récent ou plus ancien).
 
-# Technologies Utilisées
+## Technologies Utilisées
 
 * Frontend : HTML, JavaScript (Vanilla ES6+), Tailwind CSS
 
@@ -52,7 +52,7 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 * Storage : Pour l'hébergement des photos de profil des utilisateurs.
 
-# 📂 Structure du Projet
+## 📂 Structure du Projet
 
     TaskFlow-Kanban/
     ├── .gitignore         # Fichiers ignorés par Git
@@ -66,7 +66,7 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
             └── main.js      # Toute la logique JavaScript (UI, état, logique Firebase)
 
 
-# Démarrage
+## Démarrage
 
 Ce projet est une application web statique qui se connecte directement à Firebase. Il n'y a pas de code côté serveur à exécuter, mais il doit être servi via un serveur local.
 
@@ -86,7 +86,7 @@ Cloner le dépôt :
     cd TaskFlow-Kanban
 
 
-Configurer Firebase :
+## Configurer Firebase :
 
 1- Créez un nouveau projet sur la console Firebase.
 
@@ -104,7 +104,7 @@ Ajouter la configuration Firebase :
 
 2- Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder) et collez-y votre propre configuration :
 
-#  Remplacez par votre propre configuration
+##  Remplacez par votre propre configuration
 
         const firebaseConfig = {
         apiKey: "VOTRE_API_KEY",
@@ -115,12 +115,12 @@ Ajouter la configuration Firebase :
         appId: "VOTRE_APP_ID"
         };
 
-#  Initialiser Firebase (la méthode d'initialisation peut varier)
+##  Initialiser Firebase (la méthode d'initialisation peut varier)
 # 
     firebase.initializeApp(firebaseConfig);
 #
 
-# Exécuter le projet
+## Exécuter le projet
 
 Choisissez une des options suivantes pour démarrer un serveur local :
 
