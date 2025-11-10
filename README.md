@@ -6,7 +6,7 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 # Fonctionnalités Clés
 
-Authentification et Gestion de Profil
+## Authentification et Gestion de Profil
 
 * Authentification complète : Inscription et connexion par e-mail et mot de passe via Firebase Authentication.
 
