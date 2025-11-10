@@ -16,54 +16,54 @@ Ce projet permet aux utilisateurs de créer des comptes, de gérer des projets (
 
 # Gestion de Projet
 
-Tableau de bord : Visualisez tous les projets auxquels vous avez accès sur un tableau de bord d'accueil.
+* Tableau de bord : Visualisez tous les projets auxquels vous avez accès sur un tableau de bord d'accueil.
 
-Création de projets : Créez de nouveaux projets avec un nom, une description et un code d'accès unique (secret).
+* Création de projets : Créez de nouveaux projets avec un nom, une description et un code d'accès unique (secret).
 
-Accès aux projets : Rejoignez un projet existant en utilisant son code d'accès.
+* Accès aux projets : Rejoignez un projet existant en utilisant son code d'accès.
 
 # Tableau Kanban et Tâches
 
-Tableau par projet : Chaque projet possède son propre tableau Kanban (To Do, In Progress, Done).
+* Tableau par projet : Chaque projet possède son propre tableau Kanban (To Do, In Progress, Done).
 
-Mises à jour en temps réel : Utilise les "snapshots" Firestore pour que tous les changements (nouvelles tâches, changements de statut) soient reflétés instantanément pour tous les utilisateurs.
+* Mises à jour en temps réel : Utilise les "snapshots" Firestore pour que tous les changements (nouvelles tâches, changements de statut) soient reflétés instantanément pour tous les utilisateurs.
 
-Gestion CRUD des tâches : Créez, lisez, modifiez et supprimez des tâches.
+* Gestion CRUD des tâches : Créez, lisez, modifiez et supprimez des tâches.
 
-Assignation : Assignez des tâches à d'autres utilisateurs membres du projet.
+* Assignation : Assignez des tâches à d'autres utilisateurs membres du projet.
 
-Glisser-déposer (Drag-and-Drop) : Déplacez facilement les tâches entre les colonnes pour changer leur statut.
+* Glisser-déposer (Drag-and-Drop) : Déplacez facilement les tâches entre les colonnes pour changer leur statut.
 
 # Filtrage et Tri
 
-Filtrage : Filtrez les tâches par nom ou par créateur.
+* Filtrage : Filtrez les tâches par nom ou par créateur.
 
-Tri : Triez les tâches par date de création (plus récent ou plus ancien).
+* Tri : Triez les tâches par date de création (plus récent ou plus ancien).
 
 # Technologies Utilisées
 
-Frontend : HTML, JavaScript (Vanilla ES6+), Tailwind CSS
+* Frontend : HTML, JavaScript (Vanilla ES6+), Tailwind CSS
 
-Backend (BaaS) : Firebase
+* Backend (BaaS) : Firebase
 
-Authentication : Pour la gestion des utilisateurs.
+* Authentication : Pour la gestion des utilisateurs.
 
-Firestore : Base de données NoSQL en temps réel pour les projets, utilisateurs et tâches.
+* Firestore : Base de données NoSQL en temps réel pour les projets, utilisateurs et tâches.
 
-Storage : Pour l'hébergement des photos de profil des utilisateurs.
+* Storage : Pour l'hébergement des photos de profil des utilisateurs.
 
 # 📂 Structure du Projet
 
-TaskFlow-Kanban/
-├── .gitignore         # Fichiers ignorés par Git
-├── README.md          # Ce fichier
-├── index.html         # La structure (squelette) HTML de l'application
-└── src/
-    ├── css/
-    │   └── styles.css   # Fichier de styles (personnalisés ou compilés de Tailwind)
-    └── js/
-        ├── config.js    # (Probablement la configuration Firebase)
-        └── main.js      # Toute la logique JavaScript (UI, état, logique Firebase)
+    TaskFlow-Kanban/
+    ├── .gitignore         # Fichiers ignorés par Git
+    ├── README.md          # Ce fichier
+    ├── index.html         # La structure (squelette) HTML de l'application
+    └── src/
+        ├── css/
+        │   └── styles.css   # Fichier de styles (personnalisés ou compilés de Tailwind)
+        └── js/
+            ├── config.js    # (Probablement la configuration Firebase)
+            └── main.js      # Toute la logique JavaScript (UI, état, logique Firebase)
 
 
 # Démarrage
@@ -82,27 +82,27 @@ Un compte Firebase pour configurer le backend.
 
 Cloner le dépôt :
 
-git clone [URL_DU_REPO]
-cd TaskFlow-Kanban
+    git clone [URL_DU_REPO]
+    cd TaskFlow-Kanban
 
 
 Configurer Firebase :
 
-Créez un nouveau projet sur la console Firebase.
+1- Créez un nouveau projet sur la console Firebase.
 
-Activez l'Authentication (fournisseur E-mail/Mot de passe).
+2- Activez l'Authentication (fournisseur E-mail/Mot de passe).
 
-Activez Firestore Database.
+3- Activez Firestore Database.
 
-Activez Storage. (Assurez-vous que vos règles de sécurité autorisent la lecture/écriture pour les utilisateurs authentifiés).
+4- Activez Storage. (Assurez-vous que vos règles de sécurité autorisent la lecture/écriture pour les utilisateurs authentifiés).
 
 Dans les paramètres de votre projet, trouvez votre objet de configuration firebaseConfig.
 
 Ajouter la configuration Firebase :
 
-Ouvrez le fichier src/js/main.js (ou src/js/config.js s'il est dédié à cela).
+1- Ouvrez le fichier src/js/main.js (ou src/js/config.js s'il est dédié à cela).
 
-Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder) et collez-y votre propre configuration :
+2- Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder) et collez-y votre propre configuration :
 
 #  Remplacez par votre propre configuration
 
@@ -117,14 +117,14 @@ Trouvez la variable firebaseConfig (elle est probablement vide ou un placeholder
 
 #  Initialiser Firebase (la méthode d'initialisation peut varier)
 # 
---> firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 #
 
-Exécuter le projet
+# Exécuter le projet
 
 Choisissez une des options suivantes pour démarrer un serveur local :
 
-Option 1 : (Recommandée) Utiliser npx serve
+* Option 1 : (Recommandée) Utiliser npx serve
 Ouvrez un terminal dans le dossier racine du projet et exécutez :
 #
     npx serve
@@ -132,5 +132,5 @@ Ouvrez un terminal dans le dossier racine du projet et exécutez :
 
 Ouvrez l'adresse affichée (généralement http://localhost:3000) dans votre navigateur.
 
-Option 2 : Utiliser l'extension Live Server (VS Code)
+* Option 2 : Utiliser l'extension Live Server (VS Code)
 Si vous utilisez Visual Studio Code, vous pouvez installer l'extension Live Server et cliquer sur "Go Live" en bas à droite de votre éditeur.
